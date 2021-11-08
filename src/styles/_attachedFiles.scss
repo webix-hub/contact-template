@@ -1,0 +1,87 @@
+.attachedFiles {
+
+	&.webix_view {
+		&.webix_layout_accordion {
+			background: #FFFFFF;
+		}
+	}
+
+	.webix_accordionitem {
+
+		.webix_accordionitem_header {
+			background-color: #F4F5F9;
+			border-bottom: none;
+			color: #313131;
+			font-size: 14px;
+			font-weight: 500;
+
+			.webix_accordionitem_button {
+				float: left;
+
+				&:before {
+					content: "\F027";
+				}
+			}
+		}
+
+		&.vertical {
+			&>.webix_accordionitem_header {
+				&.collapsed {
+					.webix_accordionitem_button {
+						float: left;
+
+						&:before {
+							content: "\F028";
+						}
+					}
+				}
+			}
+		}
+
+		&.collapsed {
+			.webix_accordionitem_header {
+				color: #313131;
+
+				&:focus {
+					background-color: #F4F5F9;
+				}
+
+				.webix_accordionitem_button {
+					color: #94A1B3;
+				}
+			}
+		}
+	}
+}
+
+.fileRow {
+	display: flex;
+	align-items: center;
+	border-bottom-color: transparent;
+}
+
+.fileInner {
+	display: flex;
+	align-items: center;
+	flex-grow: 1;
+}
+
+.fileIcon {
+	margin-right: 12px;
+}
+
+.fileName {
+	padding-top: 2px;
+}
+
+.fileDownload {
+	color: #1CA1C1;
+	display: flex;
+	line-height: initial;
+	margin-left: auto;
+	transition: color 0.2s ease;
+
+	&:hover {
+		color: darken($color: #1CA1C1, $amount: 10)
+	}
+}

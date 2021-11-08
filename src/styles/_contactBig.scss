@@ -1,0 +1,53 @@
+.contactBig {
+	display: flex;
+	flex-direction: column;
+	padding: 0 6px;
+}
+
+.contactBigImg {
+	margin: 12px auto 18px;
+	width: 232px;
+	height: 232px;
+
+	img {
+		width: 100%;
+	}
+}
+
+.contactBigInfo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.contactBigName {
+	color: #313131;
+	font-weight: 500;
+	margin-bottom: 8px;
+}
+
+.contactLastVisit {
+	color: #94A1B3;
+	font-size: 12px;
+	margin-bottom: 2px;
+}
+
+.contactBigButtons {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+.contactBigDetails {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 28px;
+}
+
+.contactBigTitle {
+	color: #94A1B3;
+	font-weight: 500;
+	margin-bottom: 10px;
+}
